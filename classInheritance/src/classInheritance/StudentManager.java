@@ -11,11 +11,8 @@ public class StudentManager extends UserManager{
 	public void register(User user) {
 		System.out.println(user.firstName + ", öğrenci kayıt işleminiz başarılı.");
 	}
-
-	public void addStudentToCourse(User user) {
-		
-		System.out.println(user.getFirstName()+", "+user.courseName + " kursuna başarılı şekilde kaydınız oluşturuldu.");
-		
+	public void getDepartment(Student student) {
+		System.out.println("Öğrencinin bölümü : "+student.getDepartment());
 	}
-	
+
 }

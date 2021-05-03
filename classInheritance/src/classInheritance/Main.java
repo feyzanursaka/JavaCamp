@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			Student student1 =new Student(1,"111","1521221051","Java","Feyza","Saka","feyza@gmail.com","6789");
-			Instructor instructor1 = new Instructor(1,"222","Java","Engin","Demiroğ","engin@gmail.com","12345","Yazılım");
+			Student student1 =new Student(1,1,"1521221051","Feyza","Saka","Bilgisayar Mühendisliği","feyza@gmail.com","6789");
+			Instructor instructor1 = new Instructor(1,1,"Engin","Demiroğ","Prof","engin@gmail.com","12345");
 		
 			
 			
@@ -13,10 +13,12 @@ public class Main {
 			Instructor[] instructors = {instructor1};
 			
 			StudentManager studentManager=new StudentManager();
-			studentManager.addStudentToCourse(student1);
+			studentManager.register(student1);
+			studentManager.getDepartment(student1);
 			
 			InstructorManager instructorManager=new InstructorManager();
 			instructorManager.login(instructor1);
+			instructorManager.getAcademicTitle(instructor1);
 			
 			
 

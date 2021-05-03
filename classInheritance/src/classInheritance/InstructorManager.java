@@ -10,4 +10,7 @@ public class InstructorManager extends UserManager{
 	public void register(User user) {
 		System.out.println(user.firstName + ", eðitmen kayýt iþleminiz baþarýlý.");
 	}
+	public void getAcademicTitle(Instructor instructor) {
+		System.out.println("Eðitmenin ünvaný : "+instructor.getAcademicTitle());
+	}
 }

@@ -1,31 +1,35 @@
 package classInheritance;
 
 public class Instructor extends User{
-	
-
-	String department;
+	int userId;
+	String academicTitle;
 	
 	public Instructor() {
 
 	}
 	
-	public Instructor(int id, String courseNumber, String courseName, String firstName, String lastName, String mail,String password,String department) {
-		super(id, courseNumber, courseName, firstName, lastName, mail, password);
-		this.department=department;
+	public Instructor(int id, int userId, String firstName, String lastName, String academicTitle, String mail, String password) {
+		super(id, firstName, lastName, mail, password);
 		// TODO Auto-generated constructor stub
-	}
-	
-	public Instructor(String department) {
-		super();
-		this.department = department;
-	}
-	public String getDepartment() {
-		return department;
+		this.userId=userId;
+		this.academicTitle=academicTitle;
 	}
 
-	public void setDepartment(String department) {
-		this.department = department;
+	public int getUserId() {
+		return userId;
 	}
 
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
+	public String getAcademicTitle() {
+		return academicTitle;
+	}
+
+	public void setAcademicTitle(String academicTitle) {
+		this.academicTitle = academicTitle;
+	}
 	
+
 }
